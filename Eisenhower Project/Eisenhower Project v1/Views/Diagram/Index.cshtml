@@ -3,6 +3,15 @@
     ViewBag.Title = "Index";
 }
 
+<script src="~/Scripts/ValidationTool.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+dragElement(document.getElementById("mydiv"));
+</script>
+
+
+
+
 <div class="card-body">
     <h2>Diagram Page Here</h2>
 </div>
@@ -10,6 +19,10 @@
 <div class="container">
     <div class="Tile border border-dark" style="background-color: aqua">
         <div class="boxTile">
+            <div id="mydiv">
+                <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                <div id="mydivheader">Click here to move</div>
+            </div>
             UP LEFT
         </div>
     </div>
